@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayBox | Central de Tutoriais</title>
+    
+    <!-- Fonte Inter importada (como o Tailwind faz) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f600b1f46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="container nav-content">
+            <!-- Logo/Título -->
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="LogoStay">
+            </a>
+            
+            <!-- Menu de Navegação (Desktop) -->
+            <nav class="nav-menu">
+                <a href="#" id="voltarTopo">Voltar ao topo</a>
+            </nav>
+
+            <!-- Botão de Menu Mobile (apenas visual, não funcional) -->
+            <button class="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Principal de Tutoriais -->
+    <main class="container">
+        
+        <!-- Hero Section/Título -->
+        <div class="hero">
+            <h1>Central de Conhecimento e Guias</h1>
+            <p>
+                Encontre guias práticos, passo a passo e tutoriais completos para tirar o máximo proveito dos seus serviços em nuvem.
+            </p>
+        </div>
+
+        <!-- Seção de Filtros e Categorias -->
+        <section class="filters">
+            <h2>Escolha a Categoria:</h2>
+            <div id="category-filters" class="filter-buttons">
+                
+                <!-- Botões de Filtro -->
+                <button data-category="todos" class="filter-btn active-filter">
+                    Todos os Tutoriais
+                </button>
+                <button data-category="email" class="filter-btn default-filter">
+                    E-mail Corporativo
+                </button>
+                <button data-category="registro" class="filter-btn default-filter">
+                    Registro.br & DNS
+                </button>
+                <button data-category="backup" class="filter-btn default-filter">
+                    Backup em Nuvem
+                </button>
+                <button data-category="servidor" class="filter-btn default-filter">
+                    Servidores Virtualizados
+                </button>
+            </div>
+        </section>
+
+        <!-- Grade de Cartões de Tutoriais -->
+        <section id="tutorial-list" class="tutorial-grid">
+
+            <!-- Card 1: E-mail Corporativo -->
+            <article class="tutorial-card border-email" data-category="email">
+                <div class="card-header border-email">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span>E-MAIL CORPORATIVO</span>
+                </div>
+                <h3 class="card-title">Configurando seu Outlook 2016 com IMAP</h3>
+                <p class="card-description">
+                    Um guia detalhado para configurar sua conta de e-mail StayBox no Microsoft Outlook 2016.
+                </p>
+                <a href="#" class="card-link" data-id="Outlook2016imap">
+                    Ver Tutorial
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </article>
+
+            <!-- Card 2: Registro.br & DNS -->
+            <article class="tutorial-card border-registro" data-category="registro">
+                <div class="card-header border-registro">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <span>REGISTRO.BR & DNS</span>
+                </div>
+                <h3 class="card-title">Como Alterar os Servidores DNS no Registro.br</h3>
+                <p class="card-description">
+                    O passo a passo essencial para apontar seu domínio para a nossa infraestrutura de hospedagem.
+                </p>
+                <a href="#" class="card-link" data-id="VideoTeste">
+                    Ver Tutorial
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </article>
+
+            <!-- Card 3: Backup em Nuvem -->
+            <article class="tutorial-card border-backup" data-category="email">
+                <div class="card-header border-backup">
+                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span>E-MAIL CORPORATIVO</span>
+                </div>
+                <h3 class="card-title">Configurando seu Thunderbird com IMAP</h3>
+                <p class="card-description">
+                    Um guia detalhado para configurar seu Thunderbird usando o protocolo IMAP.
+                </p>
+                <a href="#" class="card-link" data-id="Thunderbirdimap">
+                    Ver Tutorial
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </article>
+
+            <!-- Card 4: Servidores Virtualizados -->
+            <article class="tutorial-card border-servidor" data-category="servidor">
+                <div class="card-header border-servidor">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25M7 11h10a2 2 0 012 2v4a2 2 0 01-2 2H7a2 2 0 01-2-2v-4a2 2 0 012-2zM4 5h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"></path></svg>
+                    <span>SERVIDORES</span>
+                </div>
+                <h3 class="card-title">Acesso Remoto RDP (Windows Server): O Básico</h3>
+                <p class="card-description">
+                    Aprenda a conectar-se ao seu Servidor Virtualizado Windows usando o Remote Desktop Protocol.
+                </p>
+                <a href="#" class="card-link">
+                    Ver Tutorial
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </article>
+
+            <!-- Card 5: E-mail (Outro) -->
+            <article class="tutorial-card border-email" data-category="email">
+                <div class="card-header border-email">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span>E-MAIL CORPORATIVO</span>
+                </div>
+                <h3 class="card-title">Criando Novas Contas no Painel de Controle Webmail</h3>
+                <p class="card-description">
+                    Gerencie seus usuários de e-mail de forma simples e adicione novos colaboradores.
+                </p>
+                <a href="#" class="card-link">
+                    Ver Tutorial
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </article>
+
+            <!-- Card 6: Registro.br (Outro) -->
+            <article class="tutorial-card border-registro" data-category="registro">
+                <div class="card-header border-registro">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <span>REGISTRO.BR & DNS</span>
+                </div>
+                <h3 class="card-title">O que são Registros A, CNAME e MX?</h3>
+                <p class="card-description">
+                    Entenda a diferença e saiba quando usar cada tipo de registro DNS para seu website.
+                </p>
+                <a href="#" class="card-link">
+                    Ver Tutorial
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </article>
+
+        </section>
+
+
+        <!-- Modal para visualização dos tutoriais -->
+        <section>
+             <div id="tutorialModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-header" id="modal_title">Tutorial - Exemplo</div>
+                <p class="modal-description" id="modal_description">Descrição</p>
+                <div class="modal-body" id="modal_body">
+                   
+                </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <!-- Coluna 1: Informações de Contato -->
+                <div>
+                    <h4 class="text-accent-blue">StayBox</h4>
+                    <p>(55) 2010-7070</p>
+                    <p>contato@staybox.com.br</p>
+                    <p>BR 386, KM 32, 1106, Bairro Barril - RS</p>
+                </div>
+                
+                <!-- Coluna 2: Serviços -->
+                <div>
+                    <h4 class="text-accent-blue">Serviços</h4>
+                    <p>Servidores Cloud</p>
+                    <p>Backup & DR</p>
+                    <p>Firewall</p>
+                </div>
+
+                <!-- Coluna 3: Redes Sociais -->
+                <div>
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook">
+                           <i class="fa-brands fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" title="LinkedIn">
+                           <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" title="LinkedIn">
+                           <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Direitos Autorais -->
+            <div class="copyright">
+                2025 &copy; StayBox. Todos os Direitos Reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para Simular o Filtro de Categorias -->
+    <script src="script.js"></script>
+
+</body>
+</html>

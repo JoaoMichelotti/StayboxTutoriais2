@@ -1,0 +1,81 @@
+{
+    "tutoriais": [
+        {
+        "id": "Outlook2016imap",
+        "titulo": "Microsoft Outlook 2016 via IMAP",
+        "descricao": "Este tutorial irá guiá-lo através do processo de configuração de sua conta de e-mail StayBox no Microsoft Outlook 2016 utilizando o protocolo IMAP. Durante esse tutorial a conta de exemplo será <strong>contato@staybox.com.br</strong>, use a sua conta respectivamente.",
+        "conteudo": [
+            { "tipo": "texto", "valor": "Clique em <strong>Arquivo (File)</strong> no canto superior esquerdo."},
+            { "tipo": "imagem", "valor": "outlook2016imap/1.png"},
+
+            { "tipo": "texto", "valor": "Na próxima tela, clique na opção <strong>Adicionar Conta (Add Account)</strong>."},
+            { "tipo": "imagem", "valor": "outlook2016imap/2.png"},
+
+            { "tipo": "texto", "valor": "Na guia <strong>Email</strong>, clique na primeira opção: <strong>Novo…</strong>"},
+            { "tipo": "imagem", "valor": "outlook2016imap/3.png"},
+
+            { "tipo": "texto", "valor": "Marque a opção <strong>Configuração manual ou tipos de servidor adicionais</strong> e depois clique no botão <strong>Avançar</strong>."},
+            { "tipo": "imagem", "valor": "outlook2016imap/4.png"},
+
+            { "tipo": "texto", "valor": "Selecione a opção <strong>POP ou IMAP</strong> e depois clique no botão <strong>Avançar</strong>."},
+            { "tipo": "imagem", "valor": "outlook2016imap/5.png"},
+
+            { "tipo": "texto", "valor": "Insira as informações da sua conta: "},
+
+            { "tipo": "texto", "valor": "<ul><li>Nome: <strong>Contato</strong></li><li>Endereço de e-mail: <strong>contato@staybox.com.br</strong></li><li>Tipo de conta: <strong>IMAP</strong></li><li>Servidor de entrada de emails: <strong>mail.staybox.com.br</strong></li><li>Servidor de saída de emails (SMTP): <strong>mail.staybox.com.br</strong></li><li>Nome de usuário: <strong>contato@staybox.com.br</strong></li><li>Senha: <strong>a senha do e-mail</strong></li></ul>"},
+
+            {"tipo": "texto", "valor": "Depois, clique no botão <strong>Mais configurações...</strong>."},
+
+            { "tipo": "imagem", "valor": "outlook2016imap/6.png"},
+
+            { "tipo": "texto", "valor": "Clique na guia <strong>Servidor de saída</strong> e habilite a opção <strong>Meu servidor de saída (SMTP) requer autenticação</strong>." },
+            { "tipo": "imagem", "valor": "outlook2016imap/7.png"},
+
+            { "tipo": "texto", "valor": "Acesse a guia <strong>Avançado</strong> " },
+
+            {"tipo": "texto", "valor": "<ul><li>Altere a porta do Servidor de entrada (IMAP) para <strong>993</strong>;</li><li>Usar o seguinte tipo de conexão criptografada: selecione <strong>SSL</strong>;</li><li>Altere a porta do Servidor de saída (SMTP) para <strong>465</strong>;</li><li>Usar o seguinte tipo de conexão criptografada: selecione <strong>SSL</strong>;</li></ul>"},
+            {"tipo": "texto", "valor": "Depois clique em <strong>OK</strong>"},
+
+            { "tipo": "imagem", "valor": "outlook2016imap/8.png"},
+
+            { "tipo": "texto", "valor": "Clique no botão <strong>Avançar</strong> para finalizar a criação de sua conta."},
+            { "tipo": "imagem", "valor": "outlook2016imap/9.png"},
+
+            { "tipo": "texto", "valor": "Pronto! A sua conta já está configurada. Basta clicar no botão <strong>Fechar</strong> e depois no botão <strong>Concluir</strong>." }
+        ],
+        "categoria": "texto"
+        },
+        {
+        "id": "VideoTeste",
+        "titulo": "Testando como fica um vídeo",
+        "descricao": "Vídeo de teste para termos uma noção de como vai ficar.",
+        "video": "https://www.youtube.com/embed/9uuI0c2GAsI?si=lt6GnIWQ4o73HvMf"
+        },
+        {
+         "id": "Thunderbirdimap",
+        "titulo": "Thunderbird via IMAP - versão 145.0",
+        "descricao": "Este tutorial irá guiá-lo no processo de configuração de sua conta de e-mail StayBox no cliente de e-mail Mozilla Thunderbird utilizando o protocolo IMAP. Durante o tutorial, será utilizado um e-mail fictício como exemplo (<strong>seuemail@domínio.com.br</strong>), mas lembre-se de inserir seu endereço real.",
+        "conteudo": [
+            { "tipo": "texto", "valor": "Ao abrir o Thunderbird, você verá uma tela inicial onde deverá inserir suas informações de e-mail." },
+            { "tipo": "imagem", "valor": "Thunderbirdimap/Thunder1.png"},
+
+            { "tipo": "texto", "valor": "Preencha com seu nome, endereço de e-mail e senha. Após preencher todos os campos, clique em <strong>Configurar manualmente</strong>."},
+            { "tipo": "imagem", "valor": "Thunderbirdimap/Thunder2.png"},
+
+            { "tipo": "texto", "valor": "Na tela de configuração manual, você verá os campos abaixo para serem preenchidos:"},
+            { "tipo": "imagem", "valor": "Thunderbirdimap/Thunder3.png"},
+
+            { "tipo": "texto", "valor": "<ul><li><strong>Servidor de recebimento:</strong>IMAP</li><li>Servidor: <strong>mail.staybox.com.br</strong></li><li>Porta: <strong>993</strong></li><li>Segurança da conexão: <strong>SSL/TLS</strong></li><li>Método de autenticação: <strong>Senha normal</strong></li><li>preencha os dados conforme abaixo: Nome de usuário: <strong>seu e-mail completo</strong></li></ul>. Ficará assim: "},
+            { "tipo": "texto", "valor":  "<ul><li><strong>Servidor de envio (SMTP):</strong></li><li>Servidor: <strong>mail.staybox.com.br</strong></li><li>Porta: <strong>465</strong></li><li>Segurança da conexão: <strong>SSL/TLS</strong></li><li>Método de autenticação: <strong>Senha normal</strong></li><li>Nome de usuário: <strong>seu e-mail completo</strong></li></ul>"},
+            { "tipo": "imagem", "valor": "Thunderbirdimap/Thunder4.png"},
+
+            { "tipo": "texto", "valor": "Após preencher corretamente todas as informações, clique em <strong>Pronto</strong>."},
+            { "tipo": "imagem", "valor": "Thunderbirdimap/Thunder5.png"},
+
+            { "tipo": "texto", "valor": "Se todos os dados estiverem corretos, a conta será criada com sucesso e você já poderá utilizar o Thunderbird normalmente." }
+
+            ],
+        "categoria": "texto"
+        }
+    ]
+}
