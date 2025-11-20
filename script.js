@@ -1,10 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filterButtons = document.querySelectorAll('.chip');
     const tutorialCards = document.querySelectorAll('.tutorial-card');
 
+    // live search
+    const searchInput = document.getElementById('search');
+
+    searchInput.addEventListener('input', () => {
+
+        const value = searchInput.value.toLowerCase()
+
+        if (searchInput.value.length == 0) {
+            updateFilterState(initialFilterButton);
+            filterTutorials('todos');
+        }
+
+        tutorialCards.forEach(card => {
+
+            const text = card.textContent.toLocaleLowerCase()
+
+            if (text.includes(value)) {
+                card.classList.remove("hidden-card")
+            } else {
+                card.classList.add("hidden-card")
+            }
+
+
+        })
+
+
+    })
 
     const modal = document.getElementById("tutorialModal");
     const modal_title = document.getElementById("modal_title");
@@ -103,12 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateFilterState = (activeButton) => {
         // Remove a classe ativa e adiciona a classe padrão a todos
         filterButtons.forEach(btn => {
-            btn.classList.remove('active-filter');
+            btn.classList.remove('active');
             btn.classList.add('default-filter');
         });
         
         // Adiciona a classe ativa ao botão clicado
-        activeButton.classList.add('active-filter');
+        activeButton.classList.add('active');
         activeButton.classList.remove('default-filter');
     };
 
@@ -116,10 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterTutorials = (category) => {
         tutorialCards.forEach(card => {
             // Se a categoria for 'todos' OU a categoria do card for a selecionada
-            if (category === 'todos' || card.dataset.category === category) {
-                card.classList.remove('hidden-card');
-            } else {
-                card.classList.add('hidden-card');
+            if (searchInput.value.length == 0) {
+                if (category === 'todos' || card.dataset.category === category) {
+                    card.classList.remove('hidden-card');
+                } else {
+                    card.classList.add('hidden-card');
+                }
             }
         });
     };

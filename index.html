@@ -44,29 +44,22 @@
             </p>
         </div>
 
-        <!-- Seção de Filtros e Categorias -->
-        <section class="filters">
-            <h2>Escolha a Categoria:</h2>
-            <div id="category-filters" class="filter-buttons">
-                
-                <!-- Botões de Filtro -->
-                <button data-category="todos" class="filter-btn active-filter">
-                    Todos os Tutoriais
-                </button>
-                <button data-category="email" class="filter-btn default-filter">
-                    E-mail Corporativo
-                </button>
-                <button data-category="registro" class="filter-btn default-filter">
-                    Registro.br & DNS
-                </button>
-                <button data-category="backup" class="filter-btn default-filter">
-                    Backup em Nuvem
-                </button>
-                <button data-category="servidor" class="filter-btn default-filter">
-                    Servidores Virtualizados
-                </button>
+
+       <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Digite o que você procura... (Ex: Outlook, DNS, IMAP)">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
             </div>
-        </section>
+
+            <div class="category-list">
+                <button data-category="todos" class="chip active">Todos os Tutoriais</button>
+                <button data-category="email" class="chip">E-mail Corporativo</button>
+                <button data-category="registro" class="chip">Registro.br & DNS</button>
+                <button data-category="backup" class="chip">Backup em Nuvem</button>
+                <button data-category="servidor" class="chip">Servidores Virtualizados</button>
+            </div>
+        </div>
+
 
         <!-- Grade de Cartões de Tutoriais -->
         <section id="tutorial-list" class="tutorial-grid">
