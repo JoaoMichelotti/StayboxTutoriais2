@@ -176,13 +176,9 @@ document.addEventListener('DOMContentLoaded', () => {
             top: 0,
             behavior: "smooth"
         })
-
-
-
-
-
     })
 
+    
     
     function abrirModalPorURL() {
     // Verifica se tutoriais está disponível

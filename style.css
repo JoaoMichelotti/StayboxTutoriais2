@@ -240,10 +240,11 @@ body {
     .tutorial-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .logo img {
         max-height: 75px;
     }
+        
 }
 
 @media (min-width: 1024px) {
@@ -251,12 +252,44 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    
     .logo img {
         max-height: 75px;
     }
+        
 }
 
-/* --- Cartão do Tutorial --- */
+.div-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.div-buttons button {
+    border: none;
+    padding: 10px;
+    background: none;
+    font-size: 15px;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: 0.18s ease;
+    border-radius: 7px;
+}
+
+.div-buttons button:hover {
+    background: #e6e6e6;
+    transform: scale(1.05);
+}
+
+.div-buttons button.active {
+    background: #ff6600;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 12px rgba(255,102,0,0.35);
+}
+
+
+/* --- Cartão do Tutorial --- */ 
 .tutorial-card {
     background-color: #fff;
     padding: 1.5rem;
