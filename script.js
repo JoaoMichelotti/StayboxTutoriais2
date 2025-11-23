@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // live search
     const searchInput = document.getElementById('search');
 
+
     searchInput.addEventListener('input', () => {
 
         const value = searchInput.value.toLowerCase()
@@ -159,6 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
             filterTutorials(category);
         });
     });
+
+
     
     // Inicializa o estado de filtro para 'Todos'
     const initialFilterButton = document.querySelector('[data-category="todos"]');
