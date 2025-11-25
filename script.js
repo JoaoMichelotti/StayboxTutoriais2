@@ -181,6 +181,22 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    // Pagination Buttons
+    PagButtons = () => {
+
+        let paggButtons = document.querySelectorAll('.pagg');
+
+        paggButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+
+
+               
+            });
+    });
+
+
+    }
+
     
     
     function abrirModalPorURL() {
