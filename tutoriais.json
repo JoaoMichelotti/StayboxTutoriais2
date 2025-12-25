@@ -22,7 +22,7 @@
 
             { "tipo": "texto", "valor": "Insira as informações da sua conta: "},
 
-            { "tipo": "texto", "valor": "<ul><li>Nome: <strong>Contato</strong></li><li>Endereço de e-mail: <strong>contato@staybox.com.br</strong></li><li>Tipo de conta: <strong>IMAP</strong></li><li>Servidor de entrada de emails: <strong>mail.staybox.com.br</strong></li><li>Servidor de saída de emails (SMTP): <strong>mail.staybox.com.br</strong></li><li>Nome de usuário: <strong>contato@staybox.com.br</strong></li><li>Senha: <strong>a senha do e-mail</strong></li></ul>"},
+            { "tipo": "lista", "valor": "<ul><li>Nome: <strong>Contato</strong></li><li>Endereço de e-mail: <strong>contato@staybox.com.br</strong></li><li>Tipo de conta: <strong>IMAP</strong></li><li>Servidor de entrada de emails: <strong>mail.staybox.com.br</strong></li><li>Servidor de saída de emails (SMTP): <strong>mail.staybox.com.br</strong></li><li>Nome de usuário: <strong>contato@staybox.com.br</strong></li><li>Senha: <strong>a senha do e-mail</strong></li></ul>"},
 
             {"tipo": "texto", "valor": "Depois, clique no botão <strong>Mais configurações...</strong>."},
 

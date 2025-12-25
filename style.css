@@ -514,6 +514,13 @@ body {
     color: #333;
 }
 
+.modal-description {
+
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+
 .modal-content p {
     font-size: 18px;
 }
@@ -521,11 +528,28 @@ body {
 .modal-body {
     display: flex;
     flex-direction: column;
-    gap: 15px;  
+    gap: 8px;  
 
 }
 
-.modal-body img, 
+.modal-body p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.modal-body ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.modal-body img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+}
+
 .modal-body video {
     width: 100%;
     border-radius: 12px;

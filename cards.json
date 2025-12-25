@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Outlook2016imap",
+    "category": "email",
+    "borderClass": "border-email",
+    "headerText": "E-MAIL CORPORATIVO",
+    "title": "Configurando seu Outlook 2016 com IMAP",
+    "description": "Um guia detalhado para configurar sua conta de e-mail StayBox no Microsoft Outlook 2016.",
+    "icon": "email",
+    "linkText": "Ver Tutorial"
+  },
+  {
+    "id": "VideoTeste",
+    "category": "registro",
+    "borderClass": "border-registro",
+    "headerText": "REGISTRO.BR & DNS",
+    "title": "Como Alterar os Servidores DNS no Registro.br",
+    "description": "O passo a passo essencial para apontar seu domínio para a nossa infraestrutura de hospedagem.",
+    "icon": "dns",
+    "linkText": "Ver Tutorial"
+  },
+  {
+    "id": "Thunderbirdimap",
+    "category": "email",
+    "borderClass": "border-backup",
+    "headerText": "E-MAIL CORPORATIVO",
+    "title": "Configurando seu Thunderbird com IMAP",
+    "description": "Um guia detalhado para configurar seu Thunderbird usando o protocolo IMAP.",
+    "icon": "email",
+    "linkText": "Ver Tutorial"
+  },
+  {
+    "id": "RDPWindowsServer",
+    "category": "servidor",
+    "borderClass": "border-servidor",
+    "headerText": "SERVIDORES",
+    "title": "Acesso Remoto RDP (Windows Server): O Básico",
+    "description": "Aprenda a conectar-se ao seu Servidor Virtualizado Windows usando o Remote Desktop Protocol.",
+    "icon": "server",
+    "linkText": "Ver Tutorial"
+  },
+  {
+    "id": "CriarContaWebmail",
+    "category": "email",
+    "borderClass": "border-email",
+    "headerText": "E-MAIL CORPORATIVO",
+    "title": "Criando Novas Contas no Painel de Controle Webmail",
+    "description": "Gerencie seus usuários de e-mail de forma simples e adicione novos colaboradores.",
+    "icon": "email",
+    "linkText": "Ver Tutorial"
+  },
+  {
+    "id": "DNSBasico",
+    "category": "registro",
+    "borderClass": "border-registro",
+    "headerText": "REGISTRO.BR & DNS",
+    "title": "O que são Registros A, CNAME e MX?",
+    "description": "Entenda a diferença e saiba quando usar cada tipo de registro DNS para seu website.",
+    "icon": "dns",
+    "linkText": "Ver Tutorial"
+  }
+]
