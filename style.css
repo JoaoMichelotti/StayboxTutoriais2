@@ -397,6 +397,25 @@ body {
     .modal-body img, .modal-body video {
     max-height: 300px;
     }
+
+    .nav-content {
+        justify-content: center;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .logo img {
+
+        height: 75px;
+
+    }
+
+    .header {
+        position: relative;
+    }
+
 }
 
 .footer h4 {
